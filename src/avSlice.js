@@ -1,13 +1,11 @@
-import { createSlice } from "@reduxjs/toolkit";
 import { configureStore } from '@reduxjs/toolkit';
 import venueReducer from './venueSlice';
 import avReducer from './avSlice';
-
 export default configureStore({
-    reducer: {
-        venue: venueReducer,
-        av: avReducer,
-    },
+  reducer: {
+    venue: venueReducer,
+    av: avReducer,
+  },
 });
 export const avSlice = createSlice({
     name: "av",
